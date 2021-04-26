@@ -46,7 +46,7 @@ public class StudentMain {
             if (s.getFaculty() == faculty)
                 students.add(s);
 
-        return students.toArray(new Student[listOfStudents.length]);
+        return students.toArray(new Student[students.size()]);
     }
 
     /**
@@ -62,7 +62,7 @@ public class StudentMain {
             if (s.getFaculty() == faculty && s.getYearsOfEducation() == yearOfEducation)
                 students.add(s);
 
-        return students.toArray(new Student[listOfStudents.length]);
+        return students.toArray(new Student[students.size()]);
     }
 
     /**
@@ -77,7 +77,7 @@ public class StudentMain {
             if (s.getGroupId() == groupId)
                 students.add(s);
 
-        return students.toArray(new Student[listOfStudents.length]);
+        return students.toArray(new Student[students.size()]);
     }
 
     /**
@@ -92,7 +92,7 @@ public class StudentMain {
             if (s.getDateOfBirth().after(new GregorianCalendar(year, Calendar.DECEMBER, 31).getTime()))
                 students.add(s);
 
-        return students.toArray(new Student[listOfStudents.length]);
+        return students.toArray(new Student[students.size()]);
     }
 
     /**

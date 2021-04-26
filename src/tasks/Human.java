@@ -19,6 +19,14 @@ public class Human {
         this.address = new Address();
     }
 
+    public Human(String firstName, String lastName, String patronymic, Address address) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.patronymic = patronymic;
+        this.address = address;
+        this.dateOfBirth = new Date(0);
+    }
+
     public Human(String firstName, String lastName, Date dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -74,6 +82,10 @@ public class Human {
         return human == null ? 1 : dateOfBirth.compareTo(human.dateOfBirth);
     }
 
+    public String getFullName() {
+        return lastName + " " + firstName + " " + patronymic;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -94,6 +106,7 @@ public class Human {
     @Override
     public String toString() {
         return lastName + " " + firstName + " " + patronymic + " " +
-                new SimpleDateFormat("dd/MM/YYYY").format(dateOfBirth).toString() +"\n"+ address.toString();
+                (dateOfBirth.getTime() != 0 ? new SimpleDateFormat("dd/MM/YYYY").format(dateOfBirth) : "") +
+                "\n" + address.toString();
     }
 }
