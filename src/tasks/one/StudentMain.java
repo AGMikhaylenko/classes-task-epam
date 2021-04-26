@@ -17,8 +17,8 @@ public class StudentMain {
                 new GregorianCalendar(1995, 10, 26).getTime(), 9301534747L, Faculty.FPIE, 3, 125);
         Student studentTwo = new Student("Petr", "Petrov", "Petrovich",
                 new GregorianCalendar(1996, 0, 11).getTime(), 9201685878L, Faculty.FUSK, 1, 125);
-        Student studentThree = new Student("Alexander", "Mikhaylenko", "Gennadyevich", new Address("Tver", "Artyuhinoy", 1, 20),
-                new GregorianCalendar(1994, 8, 16).getTime(), 9065500088L, Faculty.FIT, 4, 127);
+        Student studentThree = new Student("Alexander", "Mikhaylenko", "Gennadyevich", new Address("Tver", "Sedova", 14, 20),
+                new GregorianCalendar(1994, 8, 16).getTime(), 9065550088L, Faculty.FIT, 4, 127);
         Student studentFour = new Student("Nikolay", "Nikolaev", "Nikolaevich", new Address("Tver", "Sovetskaya", 20),
                 new GregorianCalendar(1995, 8, 23).getTime(), 9807456982L, Faculty.FIT, 2, 129);
 

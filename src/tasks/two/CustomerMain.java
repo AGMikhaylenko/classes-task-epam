@@ -15,7 +15,7 @@ public class CustomerMain {
         Customer customerThree = new Customer("Nikolay", "Nikolaev", "Nikolaevich",
                 new Address("Tver", "Sovetskaya", 20), 5489_7777L);
         Customer customerFour = new Customer("Alexander", "Mikhaylenko", "Gennadyevich",
-                new Address("Tver", "Artyuhinoy", 1, 20), 5489_9999L, 1234_5678_7894L);
+                new Address("Tver", "Sedova", 14, 20), 5489_9999L, 1234_5678_7894L);
 
         Customer[] testArray = new Customer[]{customerOne, customerTwo, customerThree, customerFour};
 
